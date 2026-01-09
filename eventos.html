@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./assest/css/eventos.css" />
+    <title>Ejercicios JQuery</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Clase Practica</h1>
+      <div class="seccion">
+        <h3>Manipulacion de Texto</h3>
+        <p id="original">Texto Original</p>
+        <button type="button" id="btnCambiarTxt">Cambiar Texto</button>
+      </div>
+
+      <div class="seccion">
+        <h3>Visibilidad y Desvanecimiento</h3>
+        <button type="button" id="btnToggleVisibilidad">Alternar</button>
+        <button type="button" id="btnFade">Efecto Fade</button>
+        <div id="cajaEfectos" class="box">Ahora me ves, ahora no!</div>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <h3>Efectos Deslizamiento</h3>
+      <button type="button" id="btnSlideUp">Subir</button>
+      <button type="button" id="btnSlideDown">Bajar</button>
+      <button type="button" id="btnSlideToggle">Alternar</button>
+      <div class="box" id="cajaSlides" style="background: #e67e22">
+        Panel Deslizable
+      </div>
+    </div>
+
+    <div class="seccion">
+      <h3>Animación y Scroll</h3>
+      <p>Presiona para ir al final de la página con una animación de scroll</p>
+      <button type="button" id="btnIrAbajo">Ir al final</button>
+    </div>
+
+    <div class="spacer">
+      <p>Contenido extenso para justificar el scroll...</p>
+    </div>
+
+    <div class="seccion" id="final">
+      <h3>Final de la página</h3>
+      <button type="button" id="btnIrArriba">Volver al inicio</button>
+    </div>
+    <script src="./assest/js/script.js"></script>
+  </body>
+</html>

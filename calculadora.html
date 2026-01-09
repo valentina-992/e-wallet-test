@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./assest/css/calculadora.css" />
+    <title>Calculadora de Prestamos</title>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Simulador de Préstamo</h2>
+
+      <div class="form-group">
+        <label for="monto">Monto del préstamo ($)</label>
+        <input type="number" name="monto" id="monto" placeholder="Ej: 1000" />
+      </div>
+
+      <div class="form-group">
+        <label for="tasa">Tasa de Interés Anual (%)</label>
+        <input type="number" name="tasa" id="tasa" placeholder="Ej: 12" />
+      </div>
+
+      <div class="form-group">
+        <label for="meses">Plazo (Meses)</label>
+        <input type="number" name="meses" id="plazo" placeholder="Ej: 24" />
+      </div>
+
+      <button type="button" id="btnCalcular">Calcular</button>
+
+      <div id="resultado">
+        <div class="res-item">
+          <span>Cuota Mensual:</span>
+          <span class="val" id="cuotaMensual">$0</span>
+        </div>
+        <div class="res-item">
+          <span>Total a pagar:</span>
+          <span class="val" id="totalPagar">$0</span>
+        </div>
+        <div class="res-item">
+          <span>Intereses Totales:</span>
+          <span class="val" id="totalInteres" style="color: #c0392b">0$</span>
+        </div>
+      </div>
+    </div>
+    <script src="./assest/js/calculadora.js"></script>
+  </body>
+</html>
